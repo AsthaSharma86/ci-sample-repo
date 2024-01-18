@@ -12,10 +12,10 @@ jobs:
     steps:
       - checkout
       - matlab/install:
-          release: R2024a
+          release: latest
       - matlab/run-command:
-          command: ver
+          command: date
       - matlab/run-tests:
           source-folder: code
       - matlab/run-build:
-          tasks: clean mtest
+          tasks: mtest mtest clean mtest
