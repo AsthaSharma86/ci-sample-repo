@@ -14,8 +14,8 @@ jobs:
       - matlab/install:
           release: latest
       - matlab/run-command:
-          command: date
+          command: pwd
       - matlab/run-tests:
           source-folder: code
       - matlab/run-build:
-          tasks: clean clean
+          tasks: cn
