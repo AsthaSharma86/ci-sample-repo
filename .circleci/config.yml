@@ -18,4 +18,4 @@ jobs:
       - matlab/run-tests:
           source-folder: code
       - matlab/run-build:
-          tasks: mtest mtest clean mtest
+          tasks: mtest clean mtest
